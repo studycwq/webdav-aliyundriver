@@ -61,7 +61,7 @@ public class AliYunDriverClientService {
     private Set<TFile> getTFiles2(String nodeId) {
         FileListRequest listQuery = new FileListRequest();
         listQuery.setOffset(0);
-        listQuery.setLimit(10000);
+        listQuery.setLimit(100);
         listQuery.setOrder_by("updated_at");
         listQuery.setOrder_direction("DESC");
         listQuery.setDrive_id(client.getDriveId());
